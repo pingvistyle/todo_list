@@ -6,17 +6,25 @@ br
 br
 
 | TODO
-- @tasks.todo.each do |task|
-  li
-    = render 'task', task: task
-    = link_to 'edit', edit_task_path(task), class: 'btn-edit'
-    = link_to 'delete', task, class: 'btn-delete', method: :delete, data: { confirm: 'Delete tesk?' }
+table
+  - @tasks.todo.each do |task|
+    tr
+      td
+        = render 'task', task: task
+      td
+        = link_to 'edit', edit_task_path(task), class: 'btn-edit'
+      td
+        = link_to 'delete', task, class: 'btn-delete', method: :delete, data: { confirm: 'Delete tesk?' }
 
 br
 br
 | Completed
-- @tasks.completed.each do |task|
-  li
-    = render 'task', task: task
-    = link_to 'edit', edit_task_path(task), class: 'btn-edit'
-    = link_to 'delete', task, class: 'btn-delete', method: :delete, data: { confirm: 'Delete tesk?' }
+table
+  - @tasks.completed.each do |task|
+    tr
+      td
+        = render 'task', task: task
+      td
+        = link_to 'edit', edit_task_path(task), class: 'btn-edit'
+      td
+        = link_to 'delete', task, class: 'btn-delete', method: :delete, data: { confirm: 'Delete tesk?' }
