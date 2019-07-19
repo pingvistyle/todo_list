@@ -1,0 +1,6 @@
+h1 class="tasks-header"
+  | Tasks
+
+- @tasks.todo.each do |task|
+  li
+    = render 'task', task: task
