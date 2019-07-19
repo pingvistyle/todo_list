@@ -1,5 +1,4 @@
 = link_to task do
-  / - byebug
   = task.title
   - if task.due_date.present?
     = ": #{task.due_date.strftime('%m/%d/%Y')}"

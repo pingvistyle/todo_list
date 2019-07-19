@@ -43,3 +43,28 @@ input[type=password] {
   border: 0;
   margin-top: 6px;
 }
+
+.btn-create {
+  background: #0b9735;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 0;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.btn-edit {
+  background:  #0b9735;
+  font-size: 18px;
+  padding: 0px 20px;
+  border: 0;
+  margin-top: 6px;
+}
+
+.btn-delete {
+  background: #c91717;
+  font-size: 18px;
+  padding: 0px 20px;
+  border: 0;
+  margin-top: 6px;
+}
